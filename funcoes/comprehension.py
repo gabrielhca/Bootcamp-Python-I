@@ -13,6 +13,7 @@ aluno_aprovado = lambda aluno: aluno['nota'] >= 7
 obter_nota = lambda aluno: aluno['nota']
 somar = lambda a, b: a + b
 
+# list comprehensions permite criar listas com loops em uma linha
 alunos_aprovados = [aluno for aluno in alunos if aluno['nota'] >= 7]
 print(alunos_aprovados)
 

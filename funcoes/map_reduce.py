@@ -1,6 +1,6 @@
 from functools import reduce
 
-
+# map() aplica uma função a cada item de uma sequencia
 def somar_nota(delta):
     def calc(nota):
         return nota + delta
@@ -14,6 +14,7 @@ notas_finais_2 = map(somar_nota(1.6), notas)
 print(list(notas_finais_1))
 print(list(notas_finais_2))
 
+# reduce() acumula os valores
 def somar(a, b):
     return a + b
 

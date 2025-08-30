@@ -1,3 +1,4 @@
+# classe pai
 class Carro:
     def __init__(self):
         self.__velocidade = 0
@@ -14,12 +15,13 @@ class Carro:
         self.__velocidade -= 5
         return self.__velocidade
     
-
+# Uno herda tudo de Carro
 class Uno(Carro):
     pass
-
+# Ferrari herda tudo de Carro
 class Ferrari(Carro):
     def acelerar(self):
+        # 'super().acelerar()' chama o metodo 'acelerar' da classe pai
         super().acelerar()
         return super().acelerar()
 

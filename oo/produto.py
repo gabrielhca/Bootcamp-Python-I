@@ -1,9 +1,14 @@
+# uma classe é um modelo para criar objetos
 class Produto:
+    # __init__ é o construtor
+    # 'self' se refere ao proprio
     def __init__(self, nome, preco = 1.99, desc=0):
         self.nome = nome
+        # Usar '__' torna o atributo privado
         self.__preco = preco
         self.desc = desc
     
+    # @property permite acessar um metodo como se fosse um atributo
     @property
     def preco(self):
         return self.__preco
@@ -18,10 +23,11 @@ class Produto:
     def preco_final(self):
         return (1 - self.desc) *  self.preco
 
+# p1 e p2 são instancias/objetos da classe Produto.
 p1 = Produto('Caneta', 10, 0.1) # Produto.__init__(p1)
 p2 = Produto('Caderno', 14, 0.5)
 
-p1.preco = -70.00
+p1.preco = -70.00 # não altera pois é menor que zero
 p2.preco = 8.99
 
 print(p1.nome, p1.preco, p1.desc, p1.preco_final)

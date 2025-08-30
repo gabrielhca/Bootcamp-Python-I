@@ -1,3 +1,4 @@
+# funções de primeira classe podem ser atribuidas a variaveis
 def soma(a, b):
     return a + b
 
@@ -7,7 +8,7 @@ print(somar(3, 4))
 def sub(a, b):
     return a - b
 
-
+# funcoes de ordem superior recebem outras funções como parametros
 def operacao_aritmetica(fn, op1, op2):
     return fn(op1, op2)
 
@@ -17,13 +18,11 @@ print(resultado)
 resultado = operacao_aritmetica(sub, 13, 48)
 print(resultado)
 
+# função que retorna outra função
 # processamento parcial e otimização de velocidade
 def soma_parcial(a):
-    # processamento pesado 1 -10s
-    # processamento pesado 2 -10s
-    # processamento pesado 3 -40s
     def concluir_soma(b):
-        return a + b # 10s
+        return a + b
     return concluir_soma
 
 resultado_final = soma_parcial(10)(12)

@@ -1,3 +1,4 @@
+# 'valor_se_verdadeiro if condicao else valor_se_falso'
 lockdown = True
 grana = 30
 
