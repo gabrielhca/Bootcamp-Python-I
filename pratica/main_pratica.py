@@ -1,4 +1,4 @@
-from gerenciador import GerenciadorPlantas
+from gerenciador_pratica import GerenciadorPlantas
 
 """
 'banco_de_dados' é o dicionário externo que guarda outras estruturas de dicionários,

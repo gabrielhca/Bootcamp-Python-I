@@ -1,4 +1,4 @@
-from planta import Planta
+from planta_pratica import Planta
 
 # gerencia uma coleção de objetos Plantas, permitindo adicionar
 # listar, registrar observações e mostrar detalhes.
